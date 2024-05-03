@@ -1,0 +1,137 @@
+header{
+    height: 20vh;
+    padding-top: 5vh;
+    letter-spacing: 5px;
+    box-sizing: border-box;
+    background-color: rgba(210,190,170,0.8);
+    text-align: center;
+}
+nav{
+    background-color: rgba(210,190,170,0.8);
+}
+body,h1,h2,h3,h4,h5,h6,ul,p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Circular Std, Arial, sans-serif;
+    letter-spacing: 1px;
+    background-image: url('./images/Map17.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+footer{
+    background-color: rgb(40,50,60);
+    padding: 0.5em;
+    color: white;
+}
+main{
+    padding: 10px;
+    max-width: 1400px;
+    background-color: rgba(250,240,230,0.87);
+}
+select{
+    width: 10em;
+}
+
+button {
+    border: 2px solid hsl(90, 100%, 40%);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    background-color: chartreuse;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    margin:6px;
+    transition: background-color 200ms;
+}
+.card{
+    transition: transform 200ms;
+    transition: background-color 200ms;
+    width: 120px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.card button{
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+}
+.card:hover{
+    background-color: rgba(250,245,235,0.87);
+    transition: background-color 200ms;
+    transform: scale(103%);
+    transition: transform 200ms;
+}
+
+button:hover{
+    background-color: rgb(107, 235, 192);
+    transition: background-color 200ms;
+}
+
+#gamePlace{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top:1em;
+    margin-bottom: 2em;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.center{
+    margin: auto;
+    width: 10.5em;
+}
+aside{
+    padding: 10px;
+    color:white;
+    background-color: rgba(40,50,60,0.5);
+}
+
+@media only screen and (min-width: 600px){
+    .main-container{
+        grid-template-columns: 4fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 820px){
+    #gamePlace{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    #gamePlace{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+#times{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#overlay{
+    position: absolute;
+    z-index: 20;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(10,20,30,0.8);
+}
+#customInfo{
+    line-height: 2.5;
+    position: absolute;
+    z-index: 30;
+    background-color: aliceblue;
+    height: 50vh;
+    width: 80vw;
+    border-radius: 10px;
+    margin-top:10%;
+    display: grid;
+    padding: 1em;
+    grid-template-columns: 1fr 3fr;
+    gap:1em;
+}

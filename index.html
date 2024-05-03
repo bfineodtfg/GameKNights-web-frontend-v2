@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./images/logo.ico">
+    <title>GKN - BoardGames</title>
+</head>
+<body>
+    <div id="overlay" style="display: none;"></div>
+    <div id="customInfo" style="display: none;"></div>
+    <header>
+        <h1>Game KNights</h1>
+        <h2>Board Games</h2>
+    </header>
+    <nav>
+        <ul id="menu"></ul>
+    </nav>
+    <div class="main-container">
+        <main id="main">
+            <section>
+                Games in stock:
+                <div id="gamePlace"></div>
+            </section>
+            <section id="gameInfos">
+                Desired game:
+                <select name="games" id="games" disabled></select>
+                Number of players:
+                <input type="number" name="playerNumber" id="playerNumber" value="1" min="1">
+            </section>
+            <section id="times"></section>
+            <section id="myAppointments"></section>
+            <section id="myProfileSection" style="display: none;">
+                <label for="username">Username:</label><br>
+                <input type="text" id="usernameP" name="username" required><br>
+                <label for="password">Name:</label><br>
+                <input type="text" id="nameP" name="name" required><br><br>
+                <label for="name">Email:</label><br>
+                <input type="email" id="emailP" name="email" required disabled><br><br>
+                <label for="email">Phone:</label><br>
+                <input type="tel" id="phoneP" name="phone" required><br><br>
+                <button onclick="saveProfile()">Save</button>
+            </section>
+        </main>
+        <aside id="side">
+            <div class="center">
+                <section id="login">
+                    <h2>Login</h2>
+                    <label for="emailL">Email:</label><br>
+                    <input type="email" id="emailL" name="emailL" required><br>
+                    <label for="passwordL">Password:</label><br>
+                    <input type="password" id="passwordL" name="passwordL" required><br><br>
+                    <button onclick="doIt()">Login</button><button onclick="showRegister()">Registration</button>
+                </section>
+                <section id="registration">
+                    <h2>Registration</h2>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" required><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required><br><br>
+                    <label for="password">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="name">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="email">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+                    <button onclick="register()">Register</button><button onclick="showLogin()">Login</button>
+                </section>
+                <section id="loggedIn" style="display: none;">
+                    <p>Username: <span id="usernameSpan"></span></p>
+                    <button onclick="myprofile()">My account</button>
+                    <button onclick="myappointments()">My appointments</button>
+                    <button id="home_button" onclick="load()">Home page</button>
+                    <button onclick="logout()">Logout</button>
+                </section>
+            </div>
+        </aside>
+    </div>
+    
+    <footer>GKN © 2024</footer>
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+    <script src="register.js"></script>
+    <script src="reserve.js"></script>
+    <script src="myappointments.js"></script>
+    <script src="myprofile.js"></script>
+    <script src="overlay.js"></script>
+</body>
+</html>
