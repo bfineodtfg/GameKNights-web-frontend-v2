@@ -23,7 +23,7 @@
 ## Működés
 
 Bejelentkezés:
-- Emailcím és jelszó alapján néz meg hogy található-e az adott felhasználó az adatbázisban.
+- Email cím és jelszó alapján nézi meg hogy található-e az adott felhasználó az adatbázisban.
 - Találat esetén eltárolja a felhasználó ID-t és nevet, majd betölti a bejelentkezett felhasználók számára elérhető felületeket
 
 Kijelentkezés:
@@ -45,11 +45,9 @@ Időpontok:
 - A foglalt időpontok csak a foglaló személy által mondhatóak vissza
 - A foglalt időpontok, ha más foglalta, nem elérhetőek, csak megjelennek
 
-
 Saját időpontok:
 - A bejelentkezett felhasználó ki tudja listázni csak a saját foglalásait, innét vissza is tudja mondani őket
 - Ez esetben más információ nem jelenik meg a main-ben
-
 
 
 ## Adatbázis leírása
